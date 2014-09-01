@@ -1,6 +1,6 @@
 //Anna Malisova
 //Demo 0
-//Hellow World Java Program
+//Hello World Java Program
 //
 //  first compile the program
 //      javac HellowWorld.java
