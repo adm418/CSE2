@@ -26,55 +26,55 @@ public class Arithmetic {
        
        //total cost of socks
        double totalSockCost$=sockCost$*nSocks;
-       //tax of total cost of socks
-       double totalSockTaxDecimalForm$=(totalSockCost$*taxPercent);
+       //tax of total cost of socks*100
+       double totalSockTaxDecimalForm$=(totalSockCost$*taxPercent*100);
        //tax of total cost of socks int form
        double totalSockTaxIntForm$=(int) totalSockTaxDecimalForm$;
        //tax of total cost of socks two decimals
-       double totalSockTax$=(totalSockTaxIntForm$*100)/100;
+       double totalSockTax$=(totalSockTaxIntForm$)/100;
        //total cost of glasses
        double totalGlassCost$=glassCost$*nGlasses;
-       //tax of total cost of glasses decimal form
-       double totalGlassTaxDecimalForm$=(totalGlassCost$*taxPercent);
+       //tax of total cost of glasses decimal form*100
+       double totalGlassTaxDecimalForm$=(totalGlassCost$*taxPercent*100);
        //tax of total cost of glasses int form
        double totalGlassTaxIntForm$=(int) totalGlassTaxDecimalForm$;
        //tax of total cost of glasses two decimal places
-       double totalGlassTax$=(totalGlassTaxIntForm$*100)/100;
+       double totalGlassTax$=totalGlassTaxIntForm$/100;
        //total cost of envelopes
        double totalEnvelopeCost$=envelopeCost$*nEnvelopes;
        //tax of total cost of envelopes
-       double totalEnvelopeTaxDecimalForm$=(totalEnvelopeCost$*taxPercent);
+       double totalEnvelopeTaxDecimalForm$=(totalEnvelopeCost$*taxPercent*100);
        //tax of total cost of envelopes int form
        double totalEnvelopeTaxIntForm$=(int) totalEnvelopeTaxDecimalForm$;
        //tax of total cost of envelopes two decimals
-       double totalEnvelopeTax$=(totalEnvelopeTaxIntForm$*100)/100;
+       double totalEnvelopeTax$=(totalEnvelopeTaxIntForm$)/100;
        //total cost without tax
        double totalCostNoTax$=totalSockCost$+totalGlassCost$+totalEnvelopeCost$;
-       //total cost with tax
-       double totalCostWithTax$=totalCostNoTax$*taxPercent + totalCostNoTax$;
+       //total cost with tax*100
+       double totalCostWithTax$=(totalCostNoTax$*taxPercent + totalCostNoTax$)*100;
        //total cost with tax integer form
        int totalCostWithTaxIntForm$=(int) totalCostWithTax$;
        //total cost with tax with two decimal places
-       double totalCostWithTaxTwoDecimals$=(totalCostWithTaxIntForm$*100)/100;
+       double totalCostWithTaxTwoDecimals$=totalCostWithTaxIntForm$/100;
        
        //print out values
        System.out.println("The total cost of the socks without tax is $" + 
        totalSockCost$);
        System.out.println("The tax on the total number of socks is $" + 
-       totalSockTax$ + "(actual: " + totalSockTaxDecimalForm$ +")");
+       totalSockTax$ + "(actual: " + totalSockTaxDecimalForm$/100 +")");
        System.out.println("The total cost of the glasses without tax is $" + 
        totalGlassCost$);
        System.out.println("The tax on the total number of glasses is $" + 
-       totalGlassTax$ + "(actual: " + totalGlassTaxDecimalForm$ +")");
+       totalGlassTax$ + "(actual: " + totalGlassTaxDecimalForm$/100 +")");
        System.out.println("The total cost of the envelopes without tax is $" + 
        totalEnvelopeCost$);
        System.out.println("The tax on the total number of envelopes is $" + 
-       totalEnvelopeTax$ + "(actual: " + totalEnvelopeTaxDecimalForm$ +")");
+       totalEnvelopeTax$ + "(actual: " + totalEnvelopeTaxDecimalForm$/100 +")");
        System.out.println("The total cost without tax is $" +
        totalCostNoTax$);
        System.out.println("The total cost with tax is $" +
        totalCostWithTaxTwoDecimals$  + 
-       "(actual: " + totalCostWithTax$ +")");
+       "(actual: " + (totalCostWithTax$)/100 +")");
        
        
        
