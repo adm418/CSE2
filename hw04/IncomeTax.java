@@ -19,7 +19,7 @@ public class IncomeTax{
             int income=myScanner.nextInt ();
             int incomeThousands=income*1000;
             if (income>0){
-                if(income<20){
+                if(income<20&&income>0){
                     double percentTaxLess20=5.0;
                     //int incomeThousands=income*1000;
                     System.out.println("The tax rate on $" + incomeThousands+" is "+
@@ -41,6 +41,8 @@ public class IncomeTax{
                     System.out.println("The tax rate on $" + incomeThousands+" is "+
                     percentTaxGreater78+"%, and the tax is $"+percentTaxGreater78*incomeThousands/100);
                 }
+                
+            
                 
             }
             else{
