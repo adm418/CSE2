@@ -1,3 +1,6 @@
+//Anna Malisova
+//October 14, 2014
+//Roulette.java
 public class Roulette{
     public static void main(String [] args){
         int x =0;
