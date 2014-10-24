@@ -1,5 +1,6 @@
 //Anna Malisova
 //October 24, 2014
+
 //CSE2
 //Methods.java
 import java.util.Scanner;
