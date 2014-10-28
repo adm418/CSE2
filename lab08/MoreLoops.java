@@ -18,8 +18,15 @@ public class MoreLoops{
 	System.out.print("Enter an int- ");
 	do{
 	    
-	    scan.next();
-	    System.out.print("You did not enter an int; try again- ");
+	    
+	    if (scan.hasNextInt()){
+	    break;
+	    }
+	    else {
+	    	System.out.print("You did not enter an int; try again- ");
+	    	scan.next();
+	    	
+	    }
 	}
 	while(!scan.hasNextInt());
 	
@@ -90,7 +97,9 @@ public class MoreLoops{
 				System.out.print("Case 2 ");
 			}
 			if (n == 2){
-				System.out.print("Case 2 ");	
+				for(int q=0;q<10;q--){
+				System.out.print("Case 2 ");
+				}
 			}
 			if (n == 3){
 				return;
