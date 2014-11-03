@@ -26,20 +26,20 @@ public class NumberStack {
             for (y = 1; y < nNumbers + 1; y++) { //makes the number repeat 2n-1 number of times within the same line
 
                 for (z = 0; z < y; z++) { //makes the number repeat for n number of lines\
-                for(a = nNumbers; a>y; a--){
-                    System.out.print(" ");
-                }
-                    for (x = 0; x < y-1; x++) {
-                        System.out.print(y+""+y);
+                    for (a = nNumbers; a > y; a--) {
+                        System.out.print(" ");
+                    }
+                    for (x = 0; x < y - 1; x++) {
+                        System.out.print(y + "" + y);
 
                     }
                     System.out.println(y);
-                    
+
                 }
-                for(a = nNumbers; a>y; a--){
+                for (a = nNumbers; a > y; a--) {
                     System.out.print(" ");
                 }
-                for (x = 0; x < y-1; x++) { //prints out "-" 2n-1 number of times depending on the number, after each number is printed 2n-1 times for n amount of lines
+                for (x = 0; x < y - 1; x++) { //prints out "-" 2n-1 number of times depending on the number, after each number is printed 2n-1 times for n amount of lines
                     System.out.print("--");
 
                 }
@@ -48,39 +48,39 @@ public class NumberStack {
 
             }
             System.out.println("Using while loops: ");
-            y=1;
+            y = 1;
             while (y < nNumbers + 1) { //makes the number repeat 2n-1 number of times within the same line
-                z=0;
+                z = 0;
                 while (z < y) { //makes the number repeat for n number of lines\
                     a = nNumbers;
                     while (a > y) {
                         System.out.print(" ");
-                    
+
                         a--;
                     }
                     x = 0;
                     while (x < y - 1) {
                         System.out.print(y + "" + y);
 
-                    
+
                         x++;
                     }
                     System.out.println(y);
 
-                
+
                     z++;
                 }
                 a = nNumbers;
                 while (a > y) {
                     System.out.print(" ");
-                
+
                     a--;
                 }
-                x= 0;
+                x = 0;
                 while (x < y - 1) { //prints out "-" 2n-1 number of times depending on the number, after each number is printed 2n-1 times for n amount of lines
                     System.out.print("--");
 
-                
+
                     x++;
                 }
                 System.out.println("-");
@@ -88,50 +88,50 @@ public class NumberStack {
 
 
             }
-            System.out.println("Using do-while loops:" );
-            y=1;
-             do{ //makes the number repeat 2n-1 number of times within the same line
-                z=0;
-                do{ //makes the number repeat for n number of lines\
+            System.out.println("Using do-while loops:");
+            y = 1;
+            do { //makes the number repeat 2n-1 number of times within the same line
+                z = 0;
+                do { //makes the number repeat for n number of lines\
                     a = nNumbers;
-                     do{
+                    do {
                         System.out.print(" ");
-                    
+
                         a--;
-                    }while (a > y-1);
+                    } while (a > y - 1);
                     x = 0;
-                    do{
+                    do {
                         System.out.print(y + "" + y);
 
-                    
+
                         x++;
-                    }while (x < y-1);
+                    } while (x < y - 1);
                     System.out.println(y);
 
-                
+
                     z++;
-                }while (z < y);
+                } while (z < y);
                 a = nNumbers;
-                 do{
+                do {
                     System.out.print(" ");
-                
+
                     a--;
-                }while (a > y-1);
-                x= 0;
+                } while (a > y - 1);
+                x = 0;
                 do { //prints out "-" 2n-1 number of times depending on the number, after each number is printed 2n-1 times for n amount of lines
                     System.out.print("--");
 
-                
+
                     x++;
-                }while (x < y - 1);
+                } while (x < y - 1);
                 System.out.println("-");
                 y++;
 
 
-            }while (y < nNumbers + 1);
-            
-            
-            
+            } while (y < nNumbers + 1);
+
+
+
 
 
 
