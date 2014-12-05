@@ -19,7 +19,7 @@ public class Enigma2{
 /*
  * Error Report: Explain how you can use the java.lang exception to
  *     identify the runtime error in the above code
- * The error is a runtime error in that for case 40, the value of 40/0 is added to out, which does not make sense
+ * The error is a runtime error in that for case 40, the value of 40/0 is added to out, which does not make sense since 40/0 cannot be computed, so I got rid of the /0
  * 
  * 
  * 

@@ -48,18 +48,23 @@ public class MethodCalls {
         }
     }
 
-    public static int join(int x, int y){
+    public static int join(int x, int y){//784, 22
+        if (x<0&&y<0){
+            x*=-1;
+            y*=-1;
+        }
         String xAsString = Integer.toString(x);
         String yAsString = Integer.toString(y);
-        int number;
+        int number=0;
         int digit;
-        int i=0;
-        while (i<y.length){
-          number = Integer.parseInt(y.charAt(i));
+        int numberToReturn=y;
+        //int i=xAsString.length()-1;
+        for (int i=xAsString.length()-1; i>=0; i--){
+          number = Character.getNumericValue(xAsString.charAt(i));//4, 8
+          numberToReturn = addDigit(numberToReturn, number);//422, 8422
 
-          addDigit(x, digit);
-          i++;
         }
+        return numberToReturn;
         
         
     }

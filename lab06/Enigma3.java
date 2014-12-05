@@ -70,7 +70,7 @@ public class Enigma3{
 
 /*
  * Error report:
- * The error comes from line 64, where k becomes equal to 0, and then line 66, hwere 1 is divided by 0.
+ * The error comes from line 64, where k becomes equal to 0, and then line 66, where 1 is divided by 0.
  * 
  * 
  * 

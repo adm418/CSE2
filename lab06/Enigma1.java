@@ -57,5 +57,5 @@ public class Enigma1 {
     1-(x/100) for 7, 41, and 33 is not exactly .93, .59, or .67, but rather slightly more or slightly less.
     Therefore, you must convert the proportion to an integer first in order to find the less precise answer.
  * Also, when you enter an input that is not an error, the program crashes. Lastly, the program lets you enter
- * a value greater than 100 or less than 0  even though it asks for a value between 0 and 100.
+ * a value greater than 100 or less than 0  even though it asks for a value between 0 and 100. I fixed this.
  */

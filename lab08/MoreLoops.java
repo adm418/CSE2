@@ -92,32 +92,38 @@ public class MoreLoops{
 		break;
 		}*/
 		
-		for(int count=0;count<10;count++){
 			if (n == 1){
-				System.out.print("Case 2 ");
+				for(int r=0; r<1; r--){
+				System.out.print("Case 2 ");	
+				}
+				
 			}
 			if (n == 2){
-				for(int q=0;q<10;q--){
+				for(int q=0;q<1;q--){
 				System.out.print("Case 2 ");
+				
 				}
 			}
 			if (n == 3){
 				return;
 			}
 			if (n ==4){
+				for (int w=0; w<11;w++){
 				System.out.println("Case 4");
 				System.out.println("Case 5");
-				continue;
+				}
 			}
 			if (n == 5){
+				for(int b=0; b<11; b++){
 				System.out.println("Case 5");
-				continue;
+			}
 			}
 			if (n != 1 && n != 2 && n != 3 && n != 4 && n != 5){
+				for(int z=0; z<11; z++){
 				System.out.println(n + " is > 5 or <1");
-				continue;
+				}
 			}
-		}
+		
 	//COMMENT OUT THE ABOVE 16 LINES AND REWRITE THE CODE UING
 	// ONLY FOR LOOPS AND IF STATEMENS. BEFORE DOING SO, TRY
 	//RUNNING THE CODE WITH VARIOUS INPUTTED VALUES, E.G., 
